@@ -1,0 +1,44 @@
+.custom-nav {
+  background-color: #121d33;
+  width: 100%;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px !important;
+}
+
+.custom-nav a {
+  text-decoration: none;
+}
+
+.custom-nav a:hover {
+  text-decoration: none;
+}
+
+.custom-nav .navbar-brand {
+  font-size: 18px !important;
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.custom-nav .navbar-toggler-icon {
+  color: #b69d74 !important;
+}
+
+.custom-nav .nav-link {
+  font-size: 16px !important;
+  color: #b69d74 !important;
+  font-weight: 700;
+}
+
+.custom-nav .nav-link:hover {
+  color: #fff !important;
+  transition: 400ms ease-in-out !important;
+}
+
+.custom-nav .navbar-pnum {
+  font-size: 14px !important;
+  color: #fff !important;
+  font-weight: 700;
+}
