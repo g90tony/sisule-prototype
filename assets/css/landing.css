@@ -5,7 +5,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  height: 85vh;
+  height: 95vh;
   position: relative;
 }
 
@@ -75,13 +75,6 @@
   text-align: start;
   grid-area: text;
   margin-left: 30px;
-}
-
-.section-subtitle {
-  color: #b69d74;
-  font-weight: 800;
-  font-size: 18px;
-  margin-bottom: 10px;
 }
 
 .body-container {
