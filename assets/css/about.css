@@ -1,0 +1,267 @@
+/* intro section */
+
+.intro-container {
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  grid-template-rows: 0.1fr 0.5fr;
+  grid-template-areas:
+    "header image"
+    "text image";
+  width: 100%;
+  height: 50vh;
+  margin-top: 10%;
+  padding: 0 30px;
+}
+
+.intro-header-container {
+  width: 100%;
+  margin-bottom: 0;
+  grid-area: header;
+}
+
+.intro-header-container .section-subtitle {
+  margin-bottom: 0;
+}
+
+.intro-text-container {
+  grid-area: text;
+  padding: 0 30px;
+}
+
+.intro-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #121d33;
+  margin-top: 0;
+}
+
+.body-text {
+  font-size: 14px;
+  padding: 0 20px;
+  width: 75%;
+}
+
+.values-grid-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 100%;
+  height: max-content;
+  align-items: flex-start;
+}
+
+.value-item {
+  background-color: #121d33;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  margin: 10px 5px;
+  height: 125px;
+  width: 200px;
+}
+
+.value-item-title {
+  color: #b69d74;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.item-value-body {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.intro-image-container {
+  grid-area: image;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* why section */
+.why-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  padding: 0 30px;
+}
+
+.why-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: fit-content;
+}
+
+.why-header-container .intro-text {
+  padding: 0 20px;
+}
+.why-grid-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 0 30px;
+  justify-content: center;
+}
+
+.why-grid-container .grid-item {
+  width: 400px !important;
+  margin: 20px 30px;
+}
+
+/* team section */
+.team-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  margin-top: 10px;
+  padding: 0 30px;
+}
+
+.team-header-container {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.team-header-container .intro-text {
+  padding: 0 30px;
+}
+
+.team-grid-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 75%;
+  padding: 0 30px;
+  margin: 0 auto;
+  height: max-content;
+}
+
+.team-item {
+  margin: 20px 50px;
+  border: 0 !important;
+  width: 200px;
+  height: max-content;
+  object-fit: cover;
+  text-align: center;
+}
+
+.team-item .card-img-top {
+  width: 100%;
+  height: 200px !important;
+  object-fit: cover;
+  object-position: top;
+}
+
+.team-item .card-img-top img {
+  width: 100%;
+  height: 100%;
+}
+
+.team-item .card-title {
+  color: #b69d74 !important;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.team-item .card-body {
+  color: #121d33;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.grid-mid-text {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  color: #121d33;
+  font-weight: 600;
+}
+
+.staff-grid-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 75%;
+  height: max-content;
+  margin: 10px auto;
+}
+
+.staff-grid-container .team-item {
+  margin: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .intro-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr;
+    grid-template-areas:
+      "header"
+      "text";
+    width: 100%;
+    height: max-content;
+    margin-top: 30%;
+    padding: 0 30px;
+  }
+
+  .intro-image-container {
+    display: none;
+  }
+
+  .intro-text-container {
+    padding: 0;
+    width: 100%;
+  }
+
+  .body-text {
+    width: 100%;
+  }
+
+  .values-grid-container {
+    justify-content: center;
+  }
+  .value-item {
+    width: 80%;
+  }
+
+  .why-grid-container .grid-item {
+    width: 99%;
+  }
+
+  .why-grid-container {
+    padding: 0;
+  }
+
+  .team-item {
+    width: 80%;
+  }
+
+  .team-grid-container {
+    width: 100%;
+  }
+
+  .team-grid-container .team-item {
+    margin: 20px;
+  }
+
+  .staff-grid-container {
+    width: 100%;
+  }
+}
