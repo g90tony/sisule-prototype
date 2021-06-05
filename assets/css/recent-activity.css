@@ -73,3 +73,39 @@
 .transactions-grid-container .grid-item {
   width: 250px;
 }
+
+@media screen and (max-width: 576px) {
+  .intro-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr;
+    grid-template-areas:
+      "header"
+      "text";
+    width: 100%;
+    height: max-content;
+    margin-top: 30%;
+    padding: 0 30px;
+  }
+
+  .intro-image-container {
+    display: none;
+  }
+
+  .intro-text-container {
+    padding: 0;
+    width: 100%;
+  }
+
+  .body-text {
+    width: 100%;
+  }
+
+  .transactions-grid-container {
+    padding: 20px;
+  }
+
+  .transactions-grid-container .grid-item {
+    width: 300px;
+  }
+}
