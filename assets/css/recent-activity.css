@@ -74,6 +74,14 @@
   width: 250px;
 }
 
+.gallery-container .grid-item-overlay {
+  display: none;
+}
+
+/* .gallery-container:hover .grid-item-overlay {
+  display: inherit !important;
+} */
+
 @media screen and (max-width: 576px) {
   .intro-container {
     display: grid;
